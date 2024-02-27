@@ -10,6 +10,20 @@
     border-radius: 10px;
     box-shadow: 0px 0px 10px var(--neutral-500);
     border: 2px solid var(--neutral-300);
+
+    .paddle {
+        position: absolute;
+        width: 10px;
+        background-color: var(--primary-300);
+        border-radius: 10vh;
+      }
+      
+      .ball {
+        position: absolute;
+        background-color: var(--secondary-500);
+        box-shadow: 0px 0px 10px var(--secondary-300);
+        border-radius: 50%;
+      }
 }
 
 .score{
@@ -33,18 +47,10 @@
     }
 }
 
-.paddle {
-  position: absolute;
-  width: 10px;
-  background-color: var(--primary-300);
-  border-radius: 10vh;
-}
-
-.ball {
-  position: absolute;
-  background-color: var(--secondary-500);
-  box-shadow: 0px 0px 10px var(--secondary-300);
-  border-radius: 50%;
+.tip{
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -52,7 +58,7 @@
       &::after{
         content: 'No mobile version';
       }
-      .game,.score{
+      .game,.score,.tip{
         display: none;
       }
     }

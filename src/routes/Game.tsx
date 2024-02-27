@@ -175,6 +175,9 @@ useEffect(() => {
           style={{ top: ballY, left: ballX, width: ballSize, height: ballSize }}
         />
       </div>
+      <div className="tip">
+        <p>Press SPACE to start game</p>
+      </div>
     </>
   );
 };
